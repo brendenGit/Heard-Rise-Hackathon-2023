@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-sm">
+    <div class="card mb-3" style="margin-top: 15px">
+        <div class="row g-0">
+            <div class="col-md-12 align-items-center justify-content-center d-flex" style="background-color:#FFF8E1">
+
+                <ul class="" id="blockers">
+                    {% for team_submission in team_submissions %}
+                    <li>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ team_submission["message"] }}</h5>
+                                <button type="button" class="btn btn-primary commentBtn">Comment</button>
+                                <span class="likes-count " id="likes-count-{{ team_submission.id }}">0 Likes</span>
+                                <button class="btn btn-link like-button " data-id="{{ team_submission.id }}">
+                                    <img width="25" height="25" src="../static/like_icon.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                    <button type="button" class="btn btn-secondary commentBtn">Load More</button>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,105 @@
+/*////////////////////////////////////////////////////////////////////////////////*/
+/* Styles for repeated elements */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffe494 !important;
+}
+
+.footer {
+    margin-top: auto !important;
+}
+
+.navbar {
+    color: #ffe494 !important;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white !important;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#heard_icon {
+    width: 30px;
+    height: auto;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/* Chat box styles */
+#chat2 .form-control {
+    border-color: transparent;
+}
+
+#chat2 .form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+#chatBox {
+    height: 550px;
+    overflow-y: auto;
+}
+
+.icon {
+    border: 1px solid black !important;
+    margin-left: 10px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+#sendFormBtn {
+    width: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.teams {
+    margin: 15px;
+}
+
+
+#blockers li {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#blockers {
+    list-style: none;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.commentBtn {
+    margin-right: 10px;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container overflow-hidden">
+    <div class="row">
+        {% for team in teams %}
+        <div class="col-md-6 col-6">
+            <div class="card teams" style="background-color:#FFF8E1">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">{{ team.name }}</h5>
+                    <p class="card-text">{{ team.summarized_blockers }}</p>
+                    <a href=" {{ url_for('show_team_blockers', team_id=team.id) }}">
+                        <button type="button" class="btn btn-primary" style="background-color:#596d79">Show
+                            Blockers</button> </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
