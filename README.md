@@ -2,7 +2,7 @@
 
 Welcome to Heard! Heard is the product we've developed during a recent hackathon. It's an innovative web application designed to streamline workflow and enhance team collaboration in the modern workplace. This README provides an overview of our MVP product, its features, and how you can get started using it.
 
--LIVE DEMO-
+[LIVE DEMO](https://www.loom.com/share/99ebf0a4951845a5ad00727bc78cda80)
 
 ## Table of Contents
 - [Features](#features)
